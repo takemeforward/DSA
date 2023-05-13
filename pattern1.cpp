@@ -5,10 +5,9 @@ int main(){
 
 	int n = 3;
 
-	char ch;
+	char ch = 'A';
 
-	for(int i = 0; i<n; i++){
-		ch = 'A';
+	for(int i = 0; i<n; i++){	
 		for(int j = 0; j<n; j++){
 			cout << ch << " ";
 			ch++;
