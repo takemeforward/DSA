@@ -1,0 +1,53 @@
+In this article we are going to discuss time complexity breefly. 
+First of all what is time complexity? Why do we need to study it? How do we find time complexity of our algorithm/code?
+All the above questions will be answered in this article.
+Here in this article we are going to study only about worst case time complexity which is denoted by big O notation. In worst case time complexity we find the maximum time need to execute an algorithm.
+Starting from the very first question what is time complexity? So,Time complexity is a measure of the amount of time an algorithm takes to run as a function of the size of its input. It emphasizes the importance of understanding how an algorithm's runtime changes with increasing input size3.
+
+Now comming to our second question that is Why do we need to study it? Ofcourse if we are able to know the order of groth of time with increase of size of input. We would also we able to choose best algorithm among available choises. We often get TLE(time limit exceeded) while coding on any online platform. It is assumed that the modern day computers are able to execute N equal to 10^8 in one second. So choose your algorithm based on following chart
+
+MAX value of N                       Time complexity
+   10^9                              O(logN) or Sqrt(N)
+   10^8                              O(N) Border case
+   10^7                              O(N) Might be accepted
+   10^6                              O(N) Perfect
+   10^5                              O(N * logN)
+   10^4                              O(N ^ 2)
+   10^2                              O(N ^ 3)
+   <= 160                            O(N ^ 4)
+   <= 18                             O(2N*N2) 
+   <= 10                             O(N!), O(2N) 
+
+
+   Now the last and final question how do we find time complexity of particular code/algorithm?
+
+   O(1):- When no of instruction to be execute is already known and doesn't depend on the size of input then the complexity is O(1)
+   for example:-
+   example1:
+
+   int a = 10;
+   int b= 20;
+   int result = a+b;
+   cout << result;
+
+   example2:
+
+   for(int i = 0; i<10; i++){
+   cout << "Hello";
+   }
+
+   O(N):- In this time complexity the execution time linerly depends on the size of input N; Usually code containing single loop runnig N times have the time complexity O(N).
+   example:
+    int n;
+    cout << "Enter size of n";
+    cin >> n;
+
+    for(int i = 0; i<n; i++){
+    cout << "Hello world!";
+    }
+
+    If we have fixed no of O(N) loops still overall time complexity is O(N)
+    example:
+     O(N) + O(N) + O(N) = 3O(N) equivalent to O(N) for big inputs of N.
+
+     
